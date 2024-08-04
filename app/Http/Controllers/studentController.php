@@ -64,8 +64,6 @@ class studentController extends Controller
         $student = Student::find($id);
         $student->update($input);
         return redirect ('students')->with('flash_message', 'Student Updated');
-
-
     }
 
     /**

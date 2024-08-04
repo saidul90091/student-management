@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\courseController;
 use App\Http\Controllers\studentController;
 use App\Http\Controllers\TeacherController;
 use Illuminate\Support\Facades\Route;
@@ -16,3 +17,5 @@ Route::resource('/students', studentController::class);
 Route::resource('/teachers', TeacherController::class);
 
 
+// courses 
+Route::resource('/courses', courseController::class);
